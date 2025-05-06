@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>godseed.net</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: monospace;
+      background-color: #000;
+      color: #00ff88;
+      overflow-x: hidden;
+      animation: flicker 1s infinite alternate;
+      position: relative;
+    }
+    h1, h2, p, a {
+      text-align: center;
+    }
+    a {
+      color: #00ff88;
+      text-decoration: none;
+    }
+    a:hover {
+      text-shadow: 0 0 5px #00ff88;
+      cursor: pointer;
+    }
+    .glitch {
+      font-size: 2rem;
+      color: #fff;
+      text-shadow: 2px 2px 0 #ff0055, -2px -2px 0 #00ffff;
+      animation: glitch 1.5s infinite;
+    }
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(2px, -2px); }
+      60% { transform: translate(-2px, -1px); }
+      80% { transform: translate(2px, 1px); }
+      100% { transform: translate(0); }
+    }
+    nav {
+      margin-top: 20px;
+    }
+    .section {
+      padding: 40px;
+    }
+    footer {
+      font-size: 0.8rem;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #444;
+    }
+    .hidden-message {
+      display: none;
+      color: #ff0055;
+      font-style: italic;
+    }
+    .section:hover .hidden-message {
+      display: block;
+    }
+    /* Static Noise Background */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://www.soundjay.com/button/beep-07.wav') repeat;
+      z-index: -1;
+      opacity: 0.2;
+      pointer-events: none;
+    }
+    img, video {
+      width: 80%;
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <h1 class="glitch">WELCOME TO GODSEED.NET</h1>
+    <p>This site was not meant to be found...</p>
+    <p>You are Subject <strong>077</strong>.</p>
+    <p class="hidden-message">Error: Unauthorized access detected.</p>
+  </div>
+  <nav>
+    <a href="#videos">▶ WATCH FILES</a> | 
+    <a href="#logs">📓 READ LOGS</a>
+  </nav>
+  <div class="section" id="videos">
+    <h2>🕸️ Recovered Videos</h2>
+    <p>PART 1: <a href="#">The Beginning</a></p>
+    <p>PART 2: [redacted]</p>
+    <p>PART 3: Coming soon...</p>
+    <p class="hidden-message">WARNING: Do not open the file.</p>
+    <video controls>
+      <source src="https://www.youtube.com/watch?v=PYkZPQ3y7H8" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video controls>
+      <source src="https://www.youtube.com/watch?v=rryHi-Dk4hI" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="section" id="logs">
+    <h2>📂 Access Log Files</h2>
+    <p>[LOG ENTRY 001] — I downloaded a file I never touched. It opened itself.</p>
+    <p>[LOG ENTRY 002] — The file grew overnight. It added... my name.</p>
+    <p>[LOG ENTRY 003] — Something is coming through.</p>
+  </div>
+  <footer>
+    godseed.net // Created by veeram — "you booted the signal... now it's awake"
+  </footer>
+</body>
+</html>
